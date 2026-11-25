@@ -58,7 +58,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #6ea2
 
 /* Letterhead hero: name, photo, About me */
 .hero{background:var(--band);color:var(--onband)}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,320px);grid-template-areas:"name photo" "about photo" "acts photo";column-gap:clamp(32px,6vw,88px);row-gap:22px;align-items:start}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,210px);grid-template-areas:"name photo" "about photo" "acts photo";column-gap:clamp(32px,6vw,88px);row-gap:22px;align-items:start}
 .name{grid-area:name}
 .name h1{font-size:clamp(40px,6vw,60px);line-height:1.02}
 .nw{white-space:nowrap}
@@ -73,7 +73,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #6ea2
 .photo.nopic img{display:none}
 @media (max-width:760px){
   .hero .wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "photo" "about" "acts"}
-  .photo{width:min(240px,64%);align-self:start}}
+  .photo{width:min(160px,45%);align-self:start}}
 
 /* Section heads */
 .head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:28px}
