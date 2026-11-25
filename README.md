@@ -1,12 +1,9 @@
-# Alex Lorenzo-Gomez Portfolio
+# Alex Lorenzo-Gomez | Portfolio
 
-Personal portfolio website for IT support and cybersecurity.
+Personal portfolio for IT support and cybersecurity roles, live at https://alexlorenzoooo.github.io
 
-## Files
-- `index.html` – page content and structure
-- `css/styles.css` – colors, liquid glass, layout, animations
-- `js/main.js` – interactive parts (terminal, floating cards, charging timeline, 3D background, home menu, resume viewer, email pop-up)
-- `assets/` – resume PDF and preview image
-
-## Preview
-Open the folder in VS Code and use the Live Server extension.
+- `index.html`: page content (About me, resume, projects, achievements, contact)
+- `styles.css`: layout, colors and fonts
+- `main.js`: email pop-up, photo fallback, nav highlight
+- `headshot.jpg`: profile photo (add your own with this exact name)
+- `Alex-Lorenzo-Gomez-Resume.pdf`: one-page resume

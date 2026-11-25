@@ -1,421 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Alex Lorenzo-Gomez | IT Support & Cybersecurity</title>
-<meta name="description" content="Portfolio of Alex Lorenzo-Gomez: IT support experience, cybersecurity projects, and skills.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Lorenzo-Gomez | Portfolio</title>
+<meta name="description" content="Alex Lorenzo-Gomez, cybersecurity student at George Mason University. Resume, projects, achievements and contact information.">
+<meta property="og:title" content="Alex Lorenzo-Gomez | Portfolio">
+<meta property="og:description" content="Cybersecurity student at George Mason University. Resume, projects and contact.">
+<meta property="og:image" content="https://alexlorenzoooo.github.io/headshot.jpg">
+<meta property="og:url" content="https://alexlorenzoooo.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23143566'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='27' font-weight='700' fill='white' text-anchor='middle'%3EAL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<canvas id="bg" aria-hidden="true"></canvas>
-<div class="bg-veil" aria-hidden="true"></div>
-<div class="wrap">
-  <header class="bar">
-    <a class="brand" href="#top">
-      <svg class="logo anim go" viewBox="0 0 48 48" fill="none" role="img" aria-label="Alex Lorenzo-Gomez logo"><defs><linearGradient id="hg" x1="10" y1="4" x2="38" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#CFE0FF"/><stop offset="1" stop-color="#3A6FF0"/></linearGradient><radialGradient id="hf" cx="24" cy="18" r="26" gradientUnits="userSpaceOnUse"><stop stop-color="#4F8BFF" stop-opacity=".32"/><stop offset="1" stop-color="#4F8BFF" stop-opacity=".04"/></radialGradient></defs><path class="lg-shield" pathLength="1" d="M24 3.5 39.5 9.3V22c0 10.2-6.4 18.7-15.5 22.4C14.9 40.7 8.5 32.2 8.5 22V9.3L24 3.5Z" fill="url(#hf)" stroke="url(#hg)" stroke-width="2"/><path class="lg-a" pathLength="1" d="M16.6 34.5 24 13.5l7.4 21" stroke="#EAF0FF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path class="lg-bar" d="M19.6 27h2.3M26.1 27h2.3" stroke="#EAF0FF" stroke-width="2.2" stroke-linecap="round"/><circle class="lg-node" cx="24" cy="27" r="2.1" fill="#6CF0B5"/><circle class="lg-halo" cx="24" cy="27" r="3.4" fill="#6CF0B5" opacity=".2"/></svg>
-      Alex Lorenzo-Gomez
-    </a>
-    <nav class="glass" aria-label="Sections">
-      <a href="#journey">Journey</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<a class="skip" href="#resume">Skip to resume</a>
 
-  <main id="top">
-    <div class="hero">
-      <div>
-        <p class="hello glass"><span class="pulse" aria-hidden="true"></span>Open to entry-level IT support and SOC roles</p>
-        <h1>Keeping people's tech running and their data safe.</h1>
-        <p class="name">Alex Lorenzo-Gomez</p>
-        <p class="role">IT support technician and cybersecurity student in Alexandria, VA</p>
-        <p class="intro">I spent two years at Geek Squad fixing computers and explaining tech in plain language. Now I'm studying cyber forensics at George Mason University because I want to help stop people from losing their data and having their information stolen.</p>
-        <div class="actions">
-          <a class="btn primary" href="mailto:deleon7517@gmail.com">Email me</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/alex-lorenzo-gomez-36b64a300" target="_blank" rel="noopener">View LinkedIn</a>
-        </div>
-      </div>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#about"><span class="mark">AL</span>Alex Lorenzo-Gomez</a>
+    <ul class="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-      <div class="stage">
-        <span class="chip a glass"><i aria-hidden="true"></i>Bilingual: English and Spanish</span>
-        <div class="term glass" role="img" aria-label="A terminal running an Nmap scan of Alex, listing his skills as open ports: troubleshooting, desktop support, security analysis, forensics, and bilingual customer support.">
-          <div class="term-top" aria-hidden="true"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="t">alex@lab: ~</span></div>
-          <pre id="scan" aria-hidden="true"></pre>
-        </div>
-        <span class="chip b glass"><i aria-hidden="true"></i>5+ custom PC builds</span>
-      </div>
+<main>
+<!-- 1. NAME, PHOTO AND ABOUT ME -->
+<section class="hero band" id="about">
+  <div class="wrap">
+    <div class="name">
+      <h1>Alex <span class="nw">Lorenzo-Gomez</span></h1>
+      <p class="lead">Cybersecurity student at George Mason University</p>
     </div>
 
-    <section class="plaza" aria-label="Home menu">
-      <p class="plaza-hint">Pick an icon to explore</p>
-      <div class="plaza-stage">
-        <div class="floor" aria-hidden="true"><canvas id="floor"></canvas></div>
-        <ul class="apps">
-        <li class="app front" style="--x:12%;--y:54%;--dur:4.2s;--delay:-0.4s">
-          <a href="#journey" aria-label="My path: From Geek Squad to George Mason">
-            <span class="float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="36" r="4"/><circle cx="36" cy="12" r="4"/><path d="M16 36h10a6 6 0 0 0 0-12h-4a6 6 0 0 1 0-12h10"/></svg></span><span class="bubble" aria-hidden="true">From Geek Squad to George Mason</span></span>
-            <span class="shadow" aria-hidden="true"></span>
-            <span class="cap">My path</span>
-          </a>
-        </li>
-        <li class="app front" style="--x:34%;--y:62%;--dur:3.6s;--delay:-1.9s">
-          <a href="#projects" aria-label="Projects: 3 hands-on labs and builds">
-            <span class="float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="10" width="34" height="28" rx="5"/><path d="m14 20 6 5-6 5M24 31h9"/></svg></span><span class="bubble" aria-hidden="true">3 hands-on labs and builds</span></span>
-            <span class="shadow" aria-hidden="true"></span>
-            <span class="cap">Projects</span>
-          </a>
-        </li>
-        <li class="app front" style="--x:57%;--y:55%;--dur:4.8s;--delay:-3.1s">
-          <a href="#experience" aria-label="Experience: Geek Squad and Trader Joe’s">
-            <span class="float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="16" width="34" height="23" rx="5"/><path d="M18 16v-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3M7 26h34"/></svg></span><span class="bubble" aria-hidden="true">Geek Squad and Trader Joe’s</span></span>
-            <span class="shadow" aria-hidden="true"></span>
-            <span class="cap">Experience</span>
-          </a>
-        </li>
-        <li class="app front" style="--x:80%;--y:63%;--dur:4.0s;--delay:-1.1s">
-          <a href="#skills" aria-label="Skills: Tools, systems, and platforms">
-            <span class="float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="14" width="20" height="20" rx="3"/><rect x="20" y="20" width="8" height="8" rx="1.5"/><path d="M19 8v6M29 8v6M19 34v6M29 34v6M8 19h6M8 29h6M34 19h6M34 29h6"/></svg></span><span class="bubble" aria-hidden="true">Tools, systems, and platforms</span></span>
-            <span class="shadow" aria-hidden="true"></span>
-            <span class="cap">Skills</span>
-          </a>
-        </li>
-        <li class="app back" style="--x:15%;--y:15%;--dur:5.2s;--delay:-2.4s">
-          <a href="#education" aria-label="Education: George Mason, NOVA, and Google">
-            <span class="float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19 24 10l20 9-20 9-20-9Z"/><path d="M12 23v8c0 3 5.4 6 12 6s12-3 12-6v-8M44 19v10"/></svg></span><span class="bubble" aria-hidden="true">George Mason, NOVA, and Google</span></span>
-            <span class="shadow" aria-hidden="true"></span>
-            <span class="cap">Education</span>
-          </a>
-        </li>
-        <li class="app back" style="--x:37%;--y:20%;--dur:4.7s;--delay:-1.6s">
-          <a href="#resume" aria-label="Resume: Preview or download my resume">
-            <span class="float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6h14l10 10v24a3 3 0 0 1-3 3H14a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3Z"/><path d="M28 6v10h10M17 25h14M17 31h14M17 19h7"/></svg></span><span class="bubble" aria-hidden="true">Preview or download my resume</span></span>
-            <span class="shadow" aria-hidden="true"></span>
-            <span class="cap">Resume</span>
-          </a>
-        </li>
-        <li class="app back" style="--x:60%;--y:13%;--dur:4.5s;--delay:-0.8s">
-          <a href="mailto:deleon7517@gmail.com" aria-label="Email me: deleon7517@gmail.com">
-            <span class="float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="12" width="34" height="24" rx="5"/><path d="m9 15 15 11 15-11"/></svg></span><span class="bubble" aria-hidden="true">deleon7517@gmail.com</span></span>
-            <span class="shadow" aria-hidden="true"></span>
-            <span class="cap">Email me</span>
-          </a>
-        </li>
-        <li class="app back" style="--x:84%;--y:19%;--dur:3.9s;--delay:-2.9s">
-          <a href="https://www.linkedin.com/in/alex-lorenzo-gomez-36b64a300" target="_blank" rel="noopener" aria-label="LinkedIn: Connect with me on LinkedIn">
-            <span class="float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="11" width="36" height="26" rx="5"/><circle cx="17" cy="22" r="4"/><path d="M11 31c1-3.5 3.3-5 6-5s5 1.5 6 5M28 19h8M28 25h8M28 31h5"/></svg></span><span class="bubble" aria-hidden="true">Connect with me on LinkedIn</span></span>
-            <span class="shadow" aria-hidden="true"></span>
-            <span class="cap">LinkedIn</span>
-          </a>
-        </li>
-        </ul>
-      </div>
-    </section>
+    <!-- Put your photo in the same folder as this file, named headshot.jpg -->
+    <figure class="photo">
+      <span class="init" aria-hidden="true">AL</span>
+      <img src="headshot.jpg" alt="Portrait of Alex Lorenzo-Gomez" width="640" height="800">
+    </figure>
 
-    <section id="journey">
-      <div class="sec-head">
-        <h2>My path so far</h2>
-        <p>From fixing laptops at Geek Squad to studying cyber forensics at George Mason, here's how I got here and where I'm headed.</p>
-      </div>
-      <div class="tl-wrap">
-        <div class="tl-track" aria-hidden="true"><div class="tl-fill"></div><div class="tl-head"></div><div class="tl-spark"></div></div>
-      <ol class="tl">
-        <li>
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">Jun 2023</span><span class="kind">Work</span></div>
-            <h3>Joined Best Buy as a Geek Squad Analyst</h3>
-            <p>Started fixing computers and phones for customers and learned to explain tech in plain language.</p>
-          </div>
-        </li>
-        <li>
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">Aug 2023</span><span class="kind">School</span></div>
-            <h3>Started at Northern Virginia Community College</h3>
-            <p>Began my Associate of Applied Science in Computer Science.</p>
-          </div>
-        </li>
-        <li>
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">Mar 2025</span><span class="kind">Work</span></div>
-            <h3>Joined Trader Joe's</h3>
-            <p>Sharpened my customer service and teamwork in a fast-paced, high-volume store.</p>
-          </div>
-        </li>
-        <li>
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">Spring 2026</span><span class="kind">Project</span></div>
-            <h3>Network security and incident response analysis</h3>
-            <p>Analyzed packet captures and firewall logs in Wireshark and Splunk to trace suspicious activity.</p>
-          </div>
-        </li>
-        <li>
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">Summer 2026</span><span class="kind">Project</span></div>
-            <h3>Penetration testing lab</h3>
-            <p>Built an isolated virtual lab and exploited vsFTPd 2.3.4 with Metasploit, then documented the fix.</p>
-          </div>
-        </li>
-        <li>
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">Aug 2026</span><span class="kind">School</span></div>
-            <h3>Graduated from NOVA and started at George Mason</h3>
-            <p>Earned my associate's degree and began my bachelor's in Cyber/Computer Forensics and Counterterrorism.</p>
-          </div>
-        </li>
-        <li class="now">
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">Now</span><span class="kind">Certification</span></div>
-            <h3>Google Cybersecurity Professional Certificate</h3>
-            <p>Working through the certificate while taking classes at George Mason.</p>
-          </div>
-        </li>
-        <li class="future">
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">Next</span><span class="kind">Goal</span></div>
-            <h3>My first IT support or SOC role</h3>
-            <p>Looking for an entry-level role where I can grow from help desk into security operations.</p>
-          </div>
-        </li>
-        <li class="future">
-          <span class="node" aria-hidden="true"></span>
-          <div class="card glass">
-            <div class="top"><span class="date">May 2028</span><span class="kind">School</span></div>
-            <h3>Bachelor's degree from George Mason</h3>
-            <p>Expected graduation with my Bachelor of Applied Science.</p>
-          </div>
-        </li>
-      </ol>
-      </div>
-    </section>
+    <div class="about">
+      <h2>About me</h2>
+      <!-- ABOUT ME TEXT: replace these two paragraphs with your own words -->
+      <p>I'm a cybersecurity student at George Mason University, working toward a Bachelor of Applied Science with a concentration in cybersecurity. I earned my Associate of Applied Science in Cybersecurity at Northern Virginia Community College, in an NSA/DHS Center of Academic Excellence program, where I worked in class labs with tools like Wireshark, Splunk, Nmap and Metasploit.</p>
+      <p>Before that, I spent almost two years at Best Buy as a Sales Associate and Geek Squad Analyst, troubleshooting customer devices from hardware and operating systems to network and printing problems. Today I work at Trader Joe's while I study. I speak English and Spanish fluently, I've built more than five custom PCs for paying clients, and I'm looking for my first role or internship in IT support or security.</p>
+    </div>
 
-    <section id="projects">
-      <div class="sec-head">
-        <h2>Projects</h2>
-        <p>Hands-on labs from my networking coursework, plus the hardware work I do on my own time.</p>
-      </div>
-      <div class="projects">
-        <article class="proj wide glass">
-          <span class="tile sm" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="6"/><path d="M24 4v8M24 36v8M4 24h8M36 24h8"/></svg></span>
-          <p class="when">Summer 2026, IT Networking course</p>
-          <h3>Vulnerability assessment and penetration testing lab</h3>
-          <ul>
-            <li>Built an isolated virtual lab and performed host discovery, port scanning, service enumeration, and vulnerability assessment using Nmap and Netdiscover.</li>
-            <li>Identified vsFTPd 2.3.4 (CVE-2011-2523), performed controlled exploitation with Metasploit, verified privileged access, and documented remediation.</li>
-          </ul>
-          <ul class="tags" aria-label="Tools"><li>Kali Linux</li><li>Metasploitable2</li><li>VirtualBox</li><li>Nmap</li><li>Metasploit</li></ul>
-        </article>
-        <article class="proj mid glass">
-          <span class="tile sm" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="14" r="4"/><circle cx="36" cy="14" r="4"/><circle cx="24" cy="36" r="4"/><path d="M15.5 16.5 21 33M32.5 16.5 27 33M16 14h16"/></svg></span>
-          <p class="when">Spring 2026, IT Networking course</p>
-          <h3>Network security and incident response analysis</h3>
-          <ul>
-            <li>Analyzed packet captures and firewall logs to identify suspicious connections, cleartext communications, and potential data exfiltration.</li>
-            <li>Correlated evidence in simulated incidents and recommended controls including segmentation, IDS/IPS, stronger authentication, and IPSec.</li>
-          </ul>
-          <ul class="tags" aria-label="Tools"><li>Wireshark</li><li>Splunk</li><li>NetWitness</li><li>IPSec</li></ul>
-        </article>
-        <article class="proj full glass">
-          <div>
-            <span class="tile sm" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="6" width="22" height="36" rx="4"/><circle cx="24" cy="31" r="4"/><path d="M18 13h12M18 18h12"/></svg></span>
-            <p class="when">Ongoing, personal builds</p>
-            <h3>Custom PC builds</h3>
-          </div>
-          <div>
-            <ul>
-              <li>Built more than five custom PCs from the ground up, handling component selection, installation, and assembly.</li>
-              <li>Diagnosed and fixed hardware issues along the way, which is the same hands-on troubleshooting I use in IT support.</li>
-            </ul>
-            <ul class="tags" aria-label="Skills"><li>Hardware diagnostics</li><li>Component installation</li><li>System assembly</li></ul>
-          </div>
-        </article>
-      </div>
-    </section>
+    <div class="acts">
+      <a class="btn primary" href="mailto:deleon7517@gmail.com" data-email>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/alex-lorenzo-gomez-36b64a300/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-6.5M12 13.5c0-1.7 1-3 2.6-3s2.4 1.1 2.4 2.8V17"/></svg>LinkedIn</a>
+      <a class="btn" href="https://github.com/alexlorenzoooo" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="5.5" r="2.3"/><circle cx="6" cy="18.5" r="2.3"/><circle cx="18" cy="8" r="2.3"/><path d="M6 7.8v8.4M18 10.3c0 4.2-6.5 3.4-11.2 6.4"/></svg>GitHub</a>
+      <a class="btn" href="Alex-Lorenzo-Gomez-Resume.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg>Resume PDF</a>
+    </div>
+  </div>
+</section>
 
-    <section id="experience">
-      <div class="sec-head">
-        <h2>Experience</h2>
-        <p>Customer-facing work where I learned to solve problems quickly and explain them clearly.</p>
-      </div>
-      <div class="jobs">
-        <article class="job glass">
-          <div class="side">
-            <p class="when">Mar 2025 – Present</p>
-            <h3>Associate</h3>
-            <p class="where">Trader Joe's, Tysons Corner, VA</p>
-          </div>
-          <ul>
-            <li>Deliver accurate customer service in a fast-paced environment while following standard operating procedures.</li>
-            <li>Collaborate across departments and adapt quickly to new procedures during high-volume shifts.</li>
-          </ul>
-        </article>
-        <article class="job glass">
-          <div class="side">
-            <p class="when">Jun 2023 – Mar 2025</p>
-            <h3>Sales Associate and Geek Squad Analyst</h3>
-            <p class="where">Best Buy, Tysons Corner, VA</p>
-          </div>
-          <ul>
-            <li>Provided desktop support for customer devices, troubleshooting hardware, software, operating systems, peripherals, network connectivity, and printing issues.</li>
-            <li>Processed service requests and kept accurate repair documentation, escalating complex problems to senior technicians.</li>
-            <li>Explained technical problems and repair options in plain language for customers of every skill level.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="sec-head">
-        <h2>Skills</h2>
-        <p>Tools I've used in coursework, labs, and on the job.</p>
-      </div>
-      <div class="platforms glass" id="platforms">
-        <svg class="trace" aria-hidden="true"><defs><linearGradient id="trg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#CFE0FF"/><stop offset="1" stop-color="#4F8BFF"/></linearGradient></defs><rect class="tr-draw" pathLength="1"/><rect class="tr-comet" pathLength="1"/></svg>
-        <span class="pl-label">Platforms</span>
-        <ul class="os-list">
-          <li><i aria-hidden="true"></i>Windows</li>
-          <li><i aria-hidden="true"></i>macOS</li>
-          <li><i aria-hidden="true"></i>Linux</li>
-        </ul>
-      </div>
-      <dl class="skills">
-        <div class="skill glass"><dt><span class="tile xs" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5 39 11v10c0 9.6-6.2 17.6-15 21-8.8-3.4-15-11.4-15-21V11l15-6Z"/><rect x="18" y="22" width="12" height="9" rx="2"/><path d="M20.5 22v-3a3.5 3.5 0 0 1 7 0v3"/></svg></span>Security</dt><dd>Wireshark, Splunk, Nmap, Metasploit, Snort, Burp Suite, pfSense, IPSec, packet analysis, Netdiscover</dd></div>
-        <div class="skill glass"><dt><span class="tile xs" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="21" cy="21" r="12"/><path d="m30 30 11 11M16 21h10M21 16v10"/></svg></span>Forensics</dt><dd>FTK Imager, Autopsy, Paraben E3, NetWitness Investigator, Windows Event Viewer</dd></div>
-        <div class="skill glass"><dt><span class="tile xs" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="9" width="36" height="24" rx="4"/><path d="M18 40h12M24 33v7"/></svg></span>Systems</dt><dd>Windows 10/11, Windows Server, Kali Linux, Ubuntu Linux, macOS, Oracle VirtualBox, Microsoft 365</dd></div>
-        <div class="skill glass"><dt><span class="tile xs" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 15-9 9 9 9M31 15l9 9-9 9M27 11l-6 26"/></svg></span>Programming</dt><dd>Java, Python, Bash/Shell scripting, PowerShell</dd></div>
-        <div class="skill glass"><dt><span class="tile xs" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="14" width="20" height="20" rx="3"/><rect x="20" y="20" width="8" height="8" rx="1.5"/><path d="M19 8v6M29 8v6M19 34v6M29 34v6M8 19h6M8 29h6M34 19h6M34 29h6"/></svg></span>Hardware</dt><dd>Hardware diagnostics, component installation and assembly, 5+ custom PC builds</dd></div>
-        <div class="skill glass"><dt><span class="tile xs" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h20a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4H17l-6 5v-5H8a4 4 0 0 1-4-4v-9a4 4 0 0 1 4-4Z"/><path d="M36 20h4a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-2v5l-6-5h-8a4 4 0 0 1-4-4v-3"/></svg></span>Languages</dt><dd>Bilingual in English and Spanish</dd></div>
-      </dl>
-    </section>
-
-    <section id="education">
-      <div class="sec-head">
-        <h2>Education and certifications</h2>
-        <p>From computer science at NOVA to cyber forensics at George Mason.</p>
-      </div>
-      <div class="edu">
-        <article class="glass">
-          <h3>George Mason University</h3>
-          <p>Bachelor of Applied Science, Cyber/Computer Forensics and Counterterrorism</p>
-          <p class="when">Aug 2026 – May 2028 (expected)</p>
-        </article>
-        <article class="glass">
-          <h3>Northern Virginia Community College</h3>
-          <p>Associate of Applied Science, Computer Science</p>
-          <p class="when">Aug 2023 – Aug 2026</p>
-        </article>
-        <article class="glass">
-          <h3>Google Cybersecurity Professional Certificate</h3>
-          <p>Currently completing</p>
-          <p class="when">In progress</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="resume">
-      <div class="sec-head">
+<!-- 2. RESUME (built into the page) -->
+<section class="band alt" id="resume">
+  <div class="wrap">
+    <div class="head">
+      <div>
         <h2>Resume</h2>
-        <p>My education, work experience, projects, and technical skills, all on one page.</p>
+        <p>Education, work experience and technical skills. The same resume is available as a one-page PDF.</p>
       </div>
-      <div class="resume-wrap">
-        <div class="resume-frame glass">
-          <span class="frame-gloss" aria-hidden="true"></span>
-          <button class="resume-paper" type="button" data-open-resume aria-label="Preview my full resume">
-            <img src="resume-preview.webp" alt="Preview of Alex Lorenzo-Gomez's resume" loading="lazy">
-          </button>
-        </div>
-        <p class="resume-meta">PDF, 1 page, updated October 2026</p>
-        <div class="actions resume-actions">
-          <button class="btn ghost" type="button" data-open-resume><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>Preview</button>
-          <a class="btn primary" href="Alex-Lorenzo-Gomez-Resume.pdf" download data-download-resume><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
-        </div>
-      </div>
-    </section>
+      <a class="btn solid" href="Alex-Lorenzo-Gomez-Resume.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg>Download PDF</a>
+    </div>
 
-    <dialog class="viewer mail-dialog" id="email-chooser" aria-labelledby="mail-title">
-      <div class="viewer-bar">
-        <span id="mail-title">Email me</span>
-        <button class="btn ghost small" type="button" data-close-mail aria-label="Close email options">Close</button>
-      </div>
-      <div class="mail-body">
-        <p class="mail-lede">Pick how you'd like to reach me, or copy my address.</p>
-        <div class="mail-copy glass">
-          <input class="mail-addr" id="mail-addr" type="text" value="deleon7517@gmail.com" readonly aria-label="My email address">
-          <button class="btn primary small copy-btn" type="button" data-copy-mail><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span class="copy-label">Copy</span></button>
-        </div>
-        <p class="sr-only" aria-live="polite" id="copy-status"></p>
-        <ul class="mail-opts">
-          <li><a class="mail-opt" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=deleon7517@gmail.com&amp;su=Reaching%20out%20from%20your%20portfolio" target="_blank" rel="noopener" data-mail-opt>
-            <span class="mo-float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile mt" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="5"/><path d="M6 17h36"/><circle cx="11" cy="13.5" r=".6"/><path d="m13 24 11 7 11-7"/></svg></span></span>
-            <span class="mo-name">Gmail</span>
-            <span class="mo-hint">Opens in a new tab</span>
-          </a></li>
-          <li><a class="mail-opt" href="https://outlook.live.com/mail/0/deeplink/compose?to=deleon7517@gmail.com&amp;subject=Reaching%20out%20from%20your%20portfolio" target="_blank" rel="noopener" data-mail-opt>
-            <span class="mo-float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile mt" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="12" width="36" height="24" rx="5"/><path d="m8 15 16 12 16-12"/></svg></span></span>
-            <span class="mo-name">Outlook</span>
-            <span class="mo-hint">Opens in a new tab</span>
-          </a></li>
-          <li><a class="mail-opt" href="https://compose.mail.yahoo.com/?to=deleon7517@gmail.com&amp;subject=Reaching%20out%20from%20your%20portfolio" target="_blank" rel="noopener" data-mail-opt>
-            <span class="mo-float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile mt" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="6"/><path d="M30 24v3a4 4 0 0 0 8 0v-3a14 14 0 1 0-6 11.5"/></svg></span></span>
-            <span class="mo-name">Yahoo Mail</span>
-            <span class="mo-hint">Opens in a new tab</span>
-          </a></li>
-          <li><a class="mail-opt" href="mailto:deleon7517@gmail.com?subject=Reaching%20out%20from%20your%20portfolio" data-mail-opt>
-            <span class="mo-float"><svg class="sel" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none"><path d="M4 26V12a8 8 0 0 1 8-8h14M74 4h14a8 8 0 0 1 8 8v14M96 74v14a8 8 0 0 1-8 8H74M26 96H12a8 8 0 0 1-8-8V74"/></svg><span class="tile mt" aria-hidden="true"><span class="gloss"></span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="6" width="30" height="36" rx="6"/><rect x="14" y="14" width="20" height="14" rx="2"/><path d="m15 16 9 6 9-6M20 36h8"/></svg></span></span>
-            <span class="mo-name">Mail app</span>
-            <span class="mo-hint">Your device’s email app</span>
-          </a></li>
-        </ul>
-      </div>
-    </dialog>
-    <dialog class="viewer" id="resume-viewer" aria-label="Resume viewer">
-      <div class="viewer-bar">
-        <span>Alex Lorenzo-Gomez, Resume</span>
-        <div class="viewer-actions">
-          <a class="btn primary small" href="Alex-Lorenzo-Gomez-Resume.pdf" download data-download-resume><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
-          <button class="btn ghost small" type="button" data-close-resume aria-label="Close resume viewer">Close</button>
+    <article class="paper">
+      <div class="rs">
+        <h3>Education</h3>
+        <div>
+          <div class="item">
+            <div class="row"><h4>George Mason University</h4><span class="date">Aug 2026 – May 2028</span></div>
+            <p class="sub">Bachelor of Applied Science, Concentration: Cybersecurity · Fairfax, VA</p>
+          </div>
+          <div class="item">
+            <div class="row"><h4>Northern Virginia Community College</h4><span class="date">Aug 2023 – Aug 2026</span></div>
+            <p class="sub">Associate of Applied Science, Cybersecurity · NSA/DHS Center of Academic Excellence program · GPA 3.0</p>
+          </div>
         </div>
       </div>
-      <div class="viewer-pages">
-        <img src="resume-preview.webp" alt="Alex Lorenzo-Gomez's resume" loading="lazy">
-      </div>
-    </dialog>
 
-    <section id="contact">
-      <div class="contact glass">
-        <h2>Let's work together.</h2>
-        <p>I'm looking for entry-level IT support and SOC analyst roles, remote or in Northern Virginia and the DC area. The fastest way to reach me is email.</p>
-        <div class="actions">
-          <a class="btn primary" href="mailto:deleon7517@gmail.com">deleon7517@gmail.com</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/alex-lorenzo-gomez-36b64a300" target="_blank" rel="noopener">View LinkedIn</a>
+      <div class="rs">
+        <h3>Work experience</h3>
+        <div>
+          <div class="item">
+            <div class="row"><h4>Associate</h4><span class="date">Mar 2025 – Present</span></div>
+            <p class="sub">Trader Joe's · Tysons Corner, VA</p>
+            <ul>
+              <li>Deliver accurate customer service in a fast-paced retail environment, resolve customer concerns, and process transactions while following standard operating procedures.</li>
+              <li>Collaborate across departments, adapt quickly to new procedures, and help keep busy shifts running smoothly.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="row"><h4>Sales Associate / Geek Squad Analyst</h4><span class="date">Jun 2023 – Mar 2025</span></div>
+            <p class="sub">Best Buy · Vienna, VA</p>
+            <ul>
+              <li>Provided desktop support for customer devices, troubleshooting hardware, software, operating systems, peripherals, network connectivity, and printing issues. Assisted with device setup and escalated complex problems to senior technicians.</li>
+              <li>Processed service requests and maintained accurate repair documentation, recording troubleshooting steps and outcomes to keep device histories current.</li>
+              <li>Translated technical specifications and solutions into clear recommendations for customers with varying technical knowledge, ensuring informed repair and replacement decisions.</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer><svg class="logo anim" viewBox="0 0 48 48" fill="none" role="img" aria-label="Alex Lorenzo-Gomez logo"><defs><linearGradient id="fg" x1="10" y1="4" x2="38" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#CFE0FF"/><stop offset="1" stop-color="#3A6FF0"/></linearGradient><radialGradient id="ff" cx="24" cy="18" r="26" gradientUnits="userSpaceOnUse"><stop stop-color="#4F8BFF" stop-opacity=".32"/><stop offset="1" stop-color="#4F8BFF" stop-opacity=".04"/></radialGradient></defs><path class="lg-shield" pathLength="1" d="M24 3.5 39.5 9.3V22c0 10.2-6.4 18.7-15.5 22.4C14.9 40.7 8.5 32.2 8.5 22V9.3L24 3.5Z" fill="url(#ff)" stroke="url(#fg)" stroke-width="2"/><path class="lg-a" pathLength="1" d="M16.6 34.5 24 13.5l7.4 21" stroke="#EAF0FF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path class="lg-bar" d="M19.6 27h2.3M26.1 27h2.3" stroke="#EAF0FF" stroke-width="2.2" stroke-linecap="round"/><circle class="lg-node" cx="24" cy="27" r="2.1" fill="#6CF0B5"/><circle class="lg-halo" cx="24" cy="27" r="3.4" fill="#6CF0B5" opacity=".2"/></svg><span>Alex Lorenzo-Gomez, Alexandria, VA</span></footer>
-</div>
+      <div class="rs">
+        <h3>Technical skills</h3>
+        <dl class="skills">
+          <dt>Security</dt><dd>Wireshark, Splunk, Nmap, Metasploit, Snort, Burp Suite, pfSense, IPSec, packet analysis, Netdiscover</dd>
+          <dt>Forensics</dt><dd>FTK Imager, Autopsy, Paraben E3, NetWitness Investigator, Windows Event Viewer</dd>
+          <dt>Systems</dt><dd>Windows 10/11, Windows Server, Kali Linux, Ubuntu Linux, macOS, Oracle VirtualBox, Microsoft 365</dd>
+          <dt>Programming</dt><dd>Java, Python, Bash/shell scripting, PowerShell</dd>
+          <dt>Hardware</dt><dd>Built 5+ custom PCs for paying clients; hardware diagnostics, component installation and assembly</dd>
+          <dt>Certification</dt><dd>Google Cybersecurity Professional Certificate (in progress)</dd>
+          <dt>Languages</dt><dd>English and Spanish (fluent)</dd>
+        </dl>
+      </div>
 
+      <div class="rs">
+        <h3>Cybersecurity projects</h3>
+        <div>
+          <div class="item">
+            <div class="row"><h4>Vulnerability Assessment and Penetration Testing</h4><span class="date">Jul 2026</span></div>
+            <p class="sub">Information Technology Networking · Kali Linux, Metasploitable2, VirtualBox, Nmap, Metasploit</p>
+            <ul>
+              <li>Built an isolated virtual lab and performed host discovery, port scanning, service enumeration, and vulnerability assessment using Nmap and Netdiscover.</li>
+              <li>Identified vsFTPd 2.3.4 (CVE-2011-2523), performed controlled exploitation with Metasploit, verified privileged access, and documented remediation.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="row"><h4>Network Security and Incident Response Analysis</h4><span class="date">Apr 2026</span></div>
+            <p class="sub">Information Technology Networking · Wireshark, Splunk, NetWitness, IPSec</p>
+            <ul>
+              <li>Analyzed packet captures and firewall logs to identify hosts, suspicious connections, cleartext communications, authentication activity, and potential data-exfiltration indicators.</li>
+              <li>Correlated network evidence in simulated incidents, documented findings, and recommended controls including segmentation, IDS/IPS, stronger authentication, and IPSec.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
+<!-- 3. PROJECTS -->
+<section class="band" id="projects">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h2>Projects</h2>
+        <p>Security labs, network analysis and web work from my classes and my own time.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="top">
+          <span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3.5 26 7.5v7.2c0 6.6-4.3 11.4-10 13.8-5.7-2.4-10-7.2-10-13.8V7.5z"/><circle cx="16" cy="15" r="4.5"/><path d="M16 8.2v3M16 18.8v3M9.2 15h3M19.8 15h3"/></svg></span>
+          <div><p class="kind">Security lab · NOVA, Jul 2026</p><h3>Vulnerability assessment and penetration testing</h3></div>
+        </div>
+        <p>Set up an isolated virtual network, mapped its hosts and services with Nmap and Netdiscover, confirmed the vsFTPd 2.3.4 backdoor (CVE-2011-2523) with Metasploit, and wrote up how to fix it.</p>
+        <ul class="tags"><li>Kali Linux</li><li>Metasploitable2</li><li>VirtualBox</li><li>Nmap</li><li>Metasploit</li></ul>
+      </article>
 
+      <article class="card">
+        <div class="top">
+          <span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="13.5" r="9"/><path d="m20.5 20.5 7 7"/><path d="M7.5 13.5h2.4l1.8-3.6 2.8 7.2 1.8-3.6h2.2"/></svg></span>
+          <div><p class="kind">Network analysis · NOVA, Apr 2026</p><h3>Network security and incident response analysis</h3></div>
+        </div>
+        <p>Worked through packet captures and firewall logs from simulated incidents to find suspicious connections, cleartext logins and signs of data exfiltration, then recommended segmentation, IDS/IPS, stronger authentication and IPSec.</p>
+        <ul class="tags"><li>Wireshark</li><li>Splunk</li><li>NetWitness</li><li>IPSec</li></ul>
+      </article>
 
+      <article class="card">
+        <div class="top">
+          <span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="25" height="21" rx="3"/><path d="M3.5 11h25"/><path d="M7.5 8.3h.01M10.5 8.3h.01"/><path d="m13 15.5-3 3 3 3M19 15.5l3 3-3 3M17 14.5l-2 8"/></svg></span>
+          <div><p class="kind">Web design · Personal project, 2026</p><h3>This portfolio website</h3></div>
+        </div>
+        <p>Planned and built this site in HTML, CSS and JavaScript, edited it in VS Code and published it with GitHub Pages.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>VS Code</li><li>GitHub Pages</li></ul>
+        <a class="more" href="https://github.com/alexlorenzoooo/alexlorenzoooo.github.io" target="_blank" rel="noopener">View the code on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h9v9M18 6 6 18"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
 
+<!-- 4. ACHIEVEMENTS -->
+<section class="band alt" id="achievements">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h2>Achievements</h2>
+        <p>Milestones from school, work and my own projects.</p>
+      </div>
+    </div>
+    <div class="ach">
+      <div class="win">
+        <span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12 16 6l13 6-13 6z"/><path d="M8.5 14.5v6c2 2 4.5 3 7.5 3s5.5-1 7.5-3v-6"/><path d="M29 12v7"/></svg></span>
+        <div class="big">AAS</div>
+        <h3>Associate of Applied Science, Cybersecurity</h3>
+        <p>Completed at NOVA in 2026, in an NSA/DHS Center of Academic Excellence program.</p>
+      </div>
+      <div class="win">
+        <span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="14" height="14" rx="2"/><rect x="13" y="13" width="6" height="6" rx="1"/><path d="M13 5v4M19 5v4M13 23v4M19 23v4M5 13h4M5 19h4M23 13h4M23 19h4"/></svg></span>
+        <div class="big">5+</div>
+        <h3>Custom PCs built for clients</h3>
+        <p>Paid builds for clients: I assembled each PC, installed the components and handled the hardware diagnostics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 
+<!-- 5. CONTACT -->
+<section class="contact band" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Contact</h2>
+      <p>Email is the best way to reach me. I'm open to IT support, help desk and SOC internships and entry-level roles in Northern Virginia, DC or remote.</p>
+      <a class="btn primary" href="mailto:deleon7517@gmail.com" data-email>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Email me</a>
+    </div>
+    <ul class="clist">
+      <li><a href="mailto:deleon7517@gmail.com" data-email>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+        <span><b>Email</b><small>deleon7517@gmail.com</small></span></a></li>
+      <li><a href="https://www.linkedin.com/in/alex-lorenzo-gomez-36b64a300/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-6.5M12 13.5c0-1.7 1-3 2.6-3s2.4 1.1 2.4 2.8V17"/></svg>
+        <span><b>LinkedIn</b><small>linkedin.com/in/alex-lorenzo-gomez-36b64a300</small></span></a></li>
+      <li><a href="https://github.com/alexlorenzoooo" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="5.5" r="2.3"/><circle cx="6" cy="18.5" r="2.3"/><circle cx="18" cy="8" r="2.3"/><path d="M6 7.8v8.4M18 10.3c0 4.2-6.5 3.4-11.2 6.4"/></svg>
+        <span><b>GitHub</b><small>github.com/alexlorenzoooo</small></span></a></li>
+      <li><span class="plain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+        <span><b>Location</b><small>Alexandria, VA</small></span></span></li>
+    </ul>
+  </div>
+</section>
 
+<footer>
+  <div class="wrap">
+    <span>© 2026 Alex Lorenzo-Gomez</span>
+    <span>Built with HTML, CSS and JavaScript, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></span>
+  </div>
+</footer>
+
+<!-- Email chooser pop-up -->
+<dialog id="email-chooser" aria-labelledby="mail-title">
+  <div class="dhead">
+    <h2 id="mail-title">Send me an email</h2>
+    <button class="x" type="button" id="close-mail" aria-label="Close">×</button>
+  </div>
+  <p>Copy my address, or open it in the email service you use.</p>
+  <div class="addr">
+    <input id="mail-addr" type="text" value="deleon7517@gmail.com" readonly aria-label="Email address">
+    <button class="btn line" type="button" id="copy-mail">Copy</button>
+  </div>
+  <div class="opts">
+    <a data-mail-opt href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=deleon7517@gmail.com&amp;su=Reaching%20out%20from%20your%20portfolio" target="_blank" rel="noopener">Gmail
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h9v9M18 6 6 18"/></svg></a>
+    <a data-mail-opt href="https://outlook.live.com/mail/0/deeplink/compose?to=deleon7517@gmail.com&amp;subject=Reaching%20out%20from%20your%20portfolio" target="_blank" rel="noopener">Outlook
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h9v9M18 6 6 18"/></svg></a>
+    <a data-mail-opt href="https://compose.mail.yahoo.com/?to=deleon7517@gmail.com&amp;subject=Reaching%20out%20from%20your%20portfolio" target="_blank" rel="noopener">Yahoo Mail
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h9v9M18 6 6 18"/></svg></a>
+    <a data-mail-opt href="mailto:deleon7517@gmail.com?subject=Reaching%20out%20from%20your%20portfolio">Mail app on this device
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h9v9M18 6 6 18"/></svg></a>
+  </div>
+</dialog>
 
 <script src="main.js"></script>
 </body>
